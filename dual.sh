@@ -33,11 +33,11 @@ add_modeline() {
     xrandr --rmmode "${name}"
     xrandr --newmode ${modeline}
     xrandr --addmode "$1" "${name}"
-    xrandr --output $1 --mode ${modeline} --left-of eDP-1
+    xrandr --output $1 --mode ${name} --left-of eDP1
 }
 
 # createDummyDisplayIntel
 # add_modeline VIRTUAL1 952 1620 60
-# add_modeline VIRTUAL1 1024 600 60
+add_modeline VIRTUAL1 1024 600 60
 # add_modeline VIRTUAL1 2048 1200 60
 #x11vnc -clip 952x1620+0+0
