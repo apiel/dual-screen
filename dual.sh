@@ -33,7 +33,7 @@ add_modeline() {
     xrandr --rmmode "${name}"
     xrandr --newmode ${modeline}
     xrandr --addmode "$1" "${name}"
-    xrandr --output $1 --mode ${name} --left-of eDP1
+    # xrandr --output $1 --mode ${name} --left-of eDP1
 }
 
 # createDummyDisplayIntel
